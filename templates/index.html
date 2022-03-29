@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <title>Air Canvas</title>
+</head>
+<body>
+    <body>
+        <h1 id="heading1" class="header">Air Canvas</h1>
+        <image src="{{ url_for('video') }}" id = "mycanvas" width="1450px" height="500px" style="border: 1px solid #000; margin: 1.5%; display: block; float: left;margin-bottom: 0%;" class="nav_left"></image><br>
+        <div class="navigation">
+        <form class="sidebar" name="form" action="/" method="POST">
+            <fieldset class="box1"> 
+                <legend class="legend1">Pen</legend>
+                <label class="label1">Color</label>
+                <select class="select1" name="color" >
+                    <option value="Green" {% if color=='Green' %} selected {% endif %}>Green</option>
+                    <option value="White" {% if color=='White' %} selected {% endif %}>White</option>
+                    <option value="Red" {% if color=='Red' %} selected {% endif %}>Red</option>
+                    <option value="Orange" {% if color=='Orange' %} selected {% endif %}>Orange</option>
+                    <option value="Yellow" {% if color=='Yellow' %} selected {% endif %}>Yellow</option>
+                    <option value="LightBlue" {% if color=='LightBlue' %} selected {% endif %}>LightBlue</option>
+                </select>
+    
+                <label class="label1">Size</label>
+                <select class="select1" name="size" >
+                    <option value="2" {% if size==2 %} selected {% endif %}>2</option>
+                    <option value="3" {% if size==3 %} selected {% endif %}>3</option>
+                    <option value="5" {% if size==5 %} selected {% endif %}>5</option>
+                    <option value="8" {% if color==8 %} selected {% endif %}>8</option>
+                </select>
+                <button class="button" type="submit"  style="height: 50px; margin-top: 2%;">Set Property</button>
+            </fieldset>
+
+    
+        </form>
+            <!-- <button class="button">Undo</button> -->
+            <button class="button"; style="height: 50px; margin-top: 2%;">Clear All</button>
+        </div>
+    
+    </body>
+</html>

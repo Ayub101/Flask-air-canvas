@@ -1,0 +1,80 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#heading1{
+    /* background-image: linear-gradient(to bottom right, pink,#db9833); */
+    background-color: #1abc9c;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    color: black;
+    margin: 0;
+    border: 0;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+}
+#mycanvas{
+    margin: 1%;
+    padding-bottom: 0%;
+}
+.button{
+    background-image: linear-gradient(to right, darkorange, orange);
+    border: 1.5px solid black;
+    border-radius: 4px;
+    color: black;
+    text-shadow: 1px 1px orangered;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.button:hover{
+    background-image: linear-gradient(to right, orangered, tomato);
+}
+.box1{
+    /* background-color: #000; */
+    border: 2px solid orangered;
+    padding: 10px 6px;
+    width: 500px;
+    height: 150px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 2%;
+}
+.legend1{
+    text-align: left;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.select1{
+    border-radius: 5px;
+    border: 2px solid #000;
+    padding: 7px;
+    padding-right: 8%;
+    margin-right: 7%;
+}
+.header {
+    padding: 20px;
+    border: 3px solid white;
+    /* background-color: #000; */
+}
+.navigation{
+
+    margin: 1%;
+    float: center;
+    display: flex;
+    padding: 2%;
+    padding-bottom: 3%;
+    margin-top: 0;
+    padding-top: 0;
+    /* background-color: #000; */
+    margin-right: 350px;
+    float: right;
+
+}
